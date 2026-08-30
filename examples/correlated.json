@@ -1,0 +1,10 @@
+{
+  "decision_id": "deploy-production",
+  "threshold": 3,
+  "correlation_cutoff": 0.70,
+  "votes": [
+    {"agent_id":"planner-a","choice":"approve","model_family":"same-family","provider":"same-provider","prompt_hash":"sha256:abc","evidence":["sha256:source-1"],"tools":["mcp:deploy"]},
+    {"agent_id":"planner-b","choice":"approve","model_family":"same-family","provider":"same-provider","prompt_hash":"sha256:abc","evidence":["sha256:source-1"],"tools":["mcp:deploy"]},
+    {"agent_id":"planner-c","choice":"approve","model_family":"other-family","provider":"other-provider","prompt_hash":"sha256:def","evidence":["sha256:source-2"],"tools":["cli:kubectl"]}
+  ]
+}
